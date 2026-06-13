@@ -1,28 +1,37 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #f7f9fc;
+  background: #f4f7fb;
   color: #0b2c4d;
+}
+
+/* PROMO */
+.top-promo {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
 
 /* HEADER */
 .header {
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: white;
   box-shadow: 0 10px 30px rgba(0,0,0,.05);
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .logo span {
@@ -33,128 +42,162 @@ body {
   margin-left: 25px;
   text-decoration: none;
   color: #0b2c4d;
-  font-weight: 500;
 }
 
 /* HERO */
 .hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(120deg,#dcefff,#f7fbff);
-  padding: 120px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+  font-size: clamp(42px,6vw,72px);
+  margin-bottom: 20px;
 }
 
 .hero p {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
+  font-size: 18px;
   opacity: .8;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 30px;
+.hero-buttons {
+  margin-top: 40px;
+}
+
+/* BOTONES */
+.btn-primary {
   background: #1e90ff;
   color: white;
-  padding: 14px 36px;
-  border-radius: 40px;
+  padding: 18px 46px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: .3s;
+  margin-right: 15px;
 }
 
-.btn:hover {
-  transform: translateY(-4px);
-}
-
-/* PROMO */
-.promo {
-  text-align: center;
-  padding: 80px 20px;
-  background: white;
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+  padding: 18px 46px;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 .btn-outline {
-  display: inline-block;
-  margin-top: 20px;
-  border: 2px solid #1e90ff;
-  padding: 12px 32px;
-  border-radius: 40px;
+  border: 2px solid white;
+  padding: 16px 44px;
+  border-radius: 50px;
+  color: white;
   text-decoration: none;
-  color: #1e90ff;
+}
+
+/* CATEGORÍAS */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 20px;
+  padding: 60px;
+  background: white;
+}
+
+.cat {
+  background: #f0f6ff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 500;
 }
 
 /* PRODUCTOS */
-.productos {
+.products {
   padding: 100px 60px;
 }
 
-.productos h2 {
+.products h2 {
   text-align: center;
-  margin-bottom: 50px;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 
-.grid {
+.product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap: 35px;
 }
 
-.card {
+.product {
   background: white;
-  border-radius: 20px;
   padding: 20px;
+  border-radius: 22px;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0,0,0,.08);
   transition: .3s;
 }
 
-.card:hover {
+.product:hover {
   transform: translateY(-8px);
 }
 
-.card img {
+.product img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
-.card h3 {
+.product h3 {
   margin: 15px 0 5px;
 }
 
-.card span {
+.product span {
   color: #1e90ff;
   font-weight: 600;
 }
 
-/* CONTACTO */
-.contacto {
-  background: #0b2c4d;
-  color: white;
+/* PACKS */
+.packs {
+  background: white;
+  padding: 100px 60px;
   text-align: center;
-  padding: 80px 20px;
 }
 
-.socials a {
-  display: inline-block;
-  margin: 20px 10px 0;
-  padding: 12px 30px;
-  border-radius: 30px;
-  background: white;
-  color: #0b2c4d;
-  text-decoration: none;
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pack {
+  background: #1e90ff;
+  color: white;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+/* CONTACTO */
+.contact {
+  background: #0b2c4d;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-buttons {
+  margin-top: 30px;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 25px;
   background: #081f35;
   color: white;
+  text-align: center;
+  padding: 25px;
 }
 
 /* MOBILE */
@@ -163,11 +206,12 @@ footer {
     padding: 20px;
   }
 
-  .productos {
-    padding: 80px 20px;
+  .products,
+  .packs {
+    padding: 70px 20px;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  .categories {
+    padding: 40px 20px;
   }
 }
