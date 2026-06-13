@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9ff;
+  color: #1e2a38;
+}
+
+.top-bar {
+  background: #0d5bd7;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #0d5bd7;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #1e2a38;
+}
+
+.whatsapp {
+  color: #1dbf73;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(120deg,#dbe9ff,#f5f9ff);
+  padding: 80px 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #0d5bd7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.btn-whatsapp {
+  margin-left: 10px;
+  background: #1dbf73;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: white;
+}
+
+.featured {
+  padding: 40px;
+  text-align: center;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.products, .packs {
+  padding: 40px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 20px;
+}
+
+.card, .pack {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.pack button {
+  margin-top: 10px;
+}
+
+.contact {
+  background: #0d5bd7;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.big {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer {
+  background: #0a3f9e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
