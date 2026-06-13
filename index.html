@@ -2,107 +2,85 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Puro Brillo | Productos de Limpieza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puro Brillo | Productos de Limpieza</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- BARRA PROMO -->
-<div class="top-bar">
-  🔥 OFERTA HOY: 20% OFF en detergentes | 🚚 Despacho gratis sobre $25.000
-</div>
-
-<!-- HEADER -->
 <header class="header">
   <div class="logo">PURO <span>BRILLO</span></div>
   <nav>
-    <a href="#">Inicio</a>
     <a href="#productos">Productos</a>
-    <a href="#packs">Packs Ahorro</a>
+    <a href="#promo">Promociones</a>
     <a href="#contacto">Contacto</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <a href="https://wa.me/56912345678" class="whatsapp">WhatsApp</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <h1>Productos de limpieza<br>para tu hogar</h1>
-    <p>Calidad que se nota, precios que convienen.</p>
-    <div class="buttons">
-      <button class="btn-primary">Comprar ahora</button>
-      <a href="https://wa.me/56912345678" class="btn-whatsapp">Escríbenos por WhatsApp</a>
-    </div>
+    <h1>Todo para un hogar más limpio</h1>
+    <p>Productos de limpieza de calidad para tu casa y negocio</p>
+    <a href="#productos" class="btn">Ver productos</a>
   </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="benefits">
-  <div>✔ Compra segura</div>
-  <div>✔ Pago contra entrega</div>
-  <div>✔ Productos certificados</div>
-  <div>✔ Atención por WhatsApp</div>
-</section>
-
-<!-- PRODUCTO DESTACADO -->
-<section class="featured">
-  <h2>Producto Destacado</h2>
-  <div class="featured-box">
-    <div>
-      <h3>Detergente Premium 5L</h3>
-      <p>Fórmula concentrada, mayor rendimiento.</p>
-      <p class="price"><span>$3.990</span> $2.990</p>
-      <button class="btn-primary">Comprar ahora</button>
-    </div>
-  </div>
+<!-- PROMO -->
+<section class="promo" id="promo">
+  <h2>🔥 Promoción destacada</h2>
+  <p>10% de descuento en tu primera compra</p>
+  <a href="https://wa.me/56912345678" class="btn-outline">Pedir por WhatsApp</a>
 </section>
 
 <!-- PRODUCTOS -->
-<section id="productos" class="products">
-  <h2>Nuestros Productos</h2>
-  <div class="grid">
-    <div class="card">Detergente<br><strong>$2.990</strong></div>
-    <div class="card">Escobas<br><strong>$4.990</strong></div>
-    <div class="card">Cloro<br><strong>$1.990</strong></div>
-    <div class="card">Limpiapisos<br><strong>$2.490</strong></div>
-    <div class="card">Esponjas<br><strong>$990</strong></div>
-    <div class="card">Suavizantes<br><strong>$3.490</strong></div>
-  </div>
-</section>
+<section class="productos" id="productos">
+  <h2>Nuestros productos</h2>
 
-<!-- PACKS -->
-<section id="packs" class="packs">
-  <h2>Packs Ahorro</h2>
   <div class="grid">
-    <div class="pack">
-      <h3>Pack Cocina</h3>
-      <p>$8.990</p>
-      <button>Ver pack</button>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="">
+      <h3>Detergente</h3>
+      <span>$2.990</span>
     </div>
-    <div class="pack">
-      <h3>Pack Hogar Completo</h3>
-      <p>$15.990</p>
-      <button>Ver pack</button>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604014238170-4def1e4e5b7a" alt="">
+      <h3>Cloro</h3>
+      <span>$1.990</span>
     </div>
-    <div class="pack">
-      <h3>Pack Mensual</h3>
-      <p>$24.990</p>
-      <button>Ver pack</button>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583947582886-f94d9a7c9c38" alt="">
+      <h3>Limpiapisos</h3>
+      <span>$2.490</span>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604014238260-4e8c1d75c0d4" alt="">
+      <h3>Esponjas</h3>
+      <span>$990</span>
     </div>
   </div>
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="contact">
-  <h2>¿Dudas o consultas?</h2>
-  <a href="https://wa.me/56912345678" class="btn-whatsapp big">Chatear por WhatsApp</a>
+<section class="contacto" id="contacto">
+  <h2>Contáctanos</h2>
+  <p>Haz tu pedido directo por redes sociales</p>
+
+  <div class="socials">
+    <a href="https://wa.me/56912345678">WhatsApp</a>
+    <a href="https://instagram.com/purobrillo.cl">Instagram</a>
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Puro Brillo | Santiago, Chile</p>
+  <p>© 2026 Puro Brillo. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js"></script>

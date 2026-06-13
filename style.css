@@ -1,128 +1,173 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f9ff;
-  color: #1e2a38;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.top-bar {
-  background: #0d5bd7;
-  color: white;
-  text-align: center;
-  padding: 8px;
-  font-size: 14px;
+body {
+  background: #f7f9fc;
+  color: #0b2c4d;
 }
 
+/* HEADER */
 .header {
-  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .logo span {
-  color: #0d5bd7;
+  color: #1e90ff;
 }
 
-nav a {
-  margin-left: 15px;
+.header nav a {
+  margin-left: 25px;
   text-decoration: none;
-  color: #1e2a38;
+  color: #0b2c4d;
+  font-weight: 500;
 }
 
-.whatsapp {
-  color: #1dbf73;
-  font-weight: bold;
-}
-
+/* HERO */
 .hero {
-  background: linear-gradient(120deg,#dbe9ff,#f5f9ff);
-  padding: 80px 40px;
+  background: linear-gradient(120deg,#dcefff,#f7fbff);
+  padding: 120px 20px;
+  text-align: center;
 }
 
 .hero h1 {
   font-size: 42px;
+  margin-bottom: 15px;
 }
 
-.buttons {
-  margin-top: 20px;
+.hero p {
+  max-width: 500px;
+  margin: auto;
+  opacity: .8;
 }
 
-.btn-primary {
-  background: #0d5bd7;
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #1e90ff;
   color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-}
-
-.btn-whatsapp {
-  margin-left: 10px;
-  background: #1dbf73;
-  color: white;
-  padding: 12px 20px;
+  padding: 14px 36px;
+  border-radius: 40px;
   text-decoration: none;
+  transition: .3s;
 }
 
-.benefits {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+/* PROMO */
+.promo {
+  text-align: center;
+  padding: 80px 20px;
   background: white;
 }
 
-.featured {
-  padding: 40px;
-  text-align: center;
+.btn-outline {
+  display: inline-block;
+  margin-top: 20px;
+  border: 2px solid #1e90ff;
+  padding: 12px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #1e90ff;
 }
 
-.price span {
-  text-decoration: line-through;
-  color: gray;
+/* PRODUCTOS */
+.productos {
+  padding: 100px 60px;
 }
 
-.products, .packs {
-  padding: 40px;
+.productos h2 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 35px;
 }
 
-.card, .pack {
+.card {
   background: white;
+  border-radius: 20px;
   padding: 20px;
-  border-radius: 8px;
-}
-
-.pack button {
-  margin-top: 10px;
-}
-
-.contact {
-  background: #0d5bd7;
-  color: white;
-  padding: 40px;
   text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  transition: .3s;
 }
 
-.big {
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card span {
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+/* CONTACTO */
+.contacto {
+  background: #0b2c4d;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.socials a {
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 10px 0;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: white;
+  color: #0b2c4d;
+  text-decoration: none;
 }
 
+/* FOOTER */
 footer {
-  background: #0a3f9e;
-  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 25px;
+  background: #081f35;
+  color: white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .header {
+    padding: 20px;
+  }
+
+  .productos {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
 }
